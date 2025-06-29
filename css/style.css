@@ -400,6 +400,9 @@ body {
   .n2 {
     width: 30%;
   }
+  .custom-cursor{
+    display: none;
+  }
 }
 
 /* -------------------- */
