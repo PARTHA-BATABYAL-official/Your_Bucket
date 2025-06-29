@@ -45,17 +45,49 @@
 ## 📁 Project Structure
 
 ```
-your-bucket/
+YOUR_TOOL/
+├── assets/
+│ ├── favicon.png # Website favicon
+│ └── preview.png # Project preview image
+│
 ├── css/
-│ └── style.css # Styles for UI, glow, cursor
+│ ├── style.css # Base styles & layout
+│ ├── mother.css # Shared styles across tools
+│ └── gradient.css # Gradient Maker specific styles
+│
 ├── js/
-│ ├── content.js # Tool logic (e.g., QR)
-│ ├── script.js # Popup/card toggle logic
-│ └── mouse.js # Custom cursor & effects
-├── index.html # Main page
-└── assets/ # Images/icons (preview, favicon)
+│ ├── script.js # Card and popup handling
+│ ├── mouse.js # Custom cursor & effects
+│ ├── content.js # QR Code Generator logic
+│ ├── mother.js # Shared JS across tools
+│ └── gradient.js # Gradient Maker logic
+│
+├── index.html # Main HTML entry point
+└── README.md # Project documentation
 
 ```
+
+---
+
+
+## 🔧 Tools
+> Current utility tools available inside **Your Bucket**:
+
+- 📷 **QR Code Generator**
+  Instantly generate QR codes from any text or link
+
+- 🎨 **Gradient Maker**
+  Create stunning CSS gradients with live preview & copyable code
+
+- 🔁 **Mother Teresa**
+  Convert between Decimal, ASCII, Binary, Hex, and more
+
+### 🧪 Coming Soon:
+- 🖌️ Color Picker
+- 🔒 Password Generator
+- 🧹 Text Formatter
+- 📁 JSON Formatter & Beautifier
+etc
 
 ---
 

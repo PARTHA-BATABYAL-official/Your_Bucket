@@ -52,7 +52,8 @@ body {
     background-color: #ff00ff;
   }
   50% {
-    transform: translate(calc(var(--x, 0px) * 0.5), calc(var(--y, 0px) * 0.5)) rotate(180deg);
+    transform: translate(calc(var(--x, 0px) * 0.5), calc(var(--y, 0px) * 0.5))
+      rotate(180deg);
     background-color: #ffffff;
   }
   100% {
@@ -186,12 +187,23 @@ body {
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #3967ffb6, #ff00ff95);
-
 }
 
 .n1 {
   width: 90%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.n1 p {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.71);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .n2 {
@@ -245,7 +257,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(163deg, #ff00ffbb 0%, #3700ffa8 100%)
+  background-image: linear-gradient(163deg, #ff00ffbb 0%, #3700ffa8 100%);
 }
 
 .con::-webkit-scrollbar {
@@ -399,12 +411,22 @@ body {
   .n1 {
     width: 70%;
   }
+  .n1 p {
+    font-size: 20px;
+    padding: 6px;
+  }
 
   .n2 {
     width: 30%;
   }
-  .i{
+  .i {
     background: transparent;
+  }
+  .n2 button {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 50%;
   }
 }
 

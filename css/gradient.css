@@ -1,0 +1,174 @@
+.gradient_con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 100%;
+}
+
+.card {
+  background: #00000060;
+  background: linear-gradient(145deg, #2881fea7, #fc3ad291);
+
+
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0px 15px rgba(255, 255, 255, 0.4);
+  max-width: 600px;
+  width: 100%;
+  transition: all 0.3s ease;
+  border: 1px solid #eeeeee60;
+}
+.card::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.controls label {
+  margin-right: 5px;
+  -webkit-text-stroke: 0.4px #d4ff00b6;
+}
+
+.controls input[type="number"] {
+  width: 90px;
+  height: 37px;
+  padding: 6px;
+  border-radius: 8px;
+  border: none;
+  background: #2a2a2a62;
+  color: #fff;
+}
+
+.color-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  white-space: wrap;
+  gap: 10px;
+  margin: 10px 0 20px;
+  padding: 10px 10px;
+  max-height: 250px;
+  /* background-color: #ff00cc; */
+}
+.color-inputs::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+.color-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #fff;
+  outline: 2px solid #444;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.color-circle:hover {
+  transform: scale(1.1);
+}
+
+.color-circle input[type="color"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preview {
+  height: 200px;
+  border-radius: 15px;
+  border: 2px solid #333;
+  margin-bottom: 25px;
+  transition: background 0.4s ease;
+}
+
+.code-box {
+  background: #252525;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: monospace;
+  color: #0f0;
+  max-height: 300px; /* Add height for scrolling */
+  overflow: auto;
+}
+
+.code-box::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+.copy-btn {
+  position: sticky;
+  top: 0;
+  float: right;
+  background: #3f3fff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  z-index: 10;
+  margin: 0 0 10px auto;
+}
+
+.copy-btn:hover {
+  background: #5a5aff;
+}
+
+.controls input,
+.color-inputs input,
+.color-circle,
+.copy-btn,
+select,
+textarea {
+  cursor: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 500px) {
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .controls input[type="number"] {
+    width: 100%;
+  }
+
+  .color-inputs {
+    justify-content: center;
+  }
+
+  .preview {
+    height: 150px;
+  }
+}
