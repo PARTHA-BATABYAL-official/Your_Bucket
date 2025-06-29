@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!isCursorInside) return;
 
     const mouseX = e.clientX;
+    
     const mouseY = e.clientY;
 
     const cursorElement = document.createElement("div");
