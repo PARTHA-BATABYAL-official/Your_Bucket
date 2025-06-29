@@ -86,4 +86,5 @@ document.addEventListener("DOMContentLoaded", () => {
   if (document.querySelector("#text")) {
     setupQRFunctionality();
   }
+  
 });

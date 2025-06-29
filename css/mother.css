@@ -1,0 +1,155 @@
+.container {
+  width: 100%;
+  max-width: 700px;
+  min-width: 320px;
+  background: rgba(25, 25, 25, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 18px;
+  padding: 30px 25px;
+  box-shadow: 0 0 30px rgba(255, 0, 255, 0.15), 0 0 30px rgba(55, 0, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.container h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 0 0 6px #ff00ff;
+  overflow: hidden;
+}
+
+.l {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.l1,
+.l2 {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: 600;
+  color: #ff00a6;
+  font-size: 25px;
+}
+
+/* Refined Inputs & Selects */
+select,
+input[type="text"] {
+  width: 100%;
+  height: 48px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 0 14px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+select::placeholder,
+input::placeholder {
+  color: #eeeeee;
+  opacity: 0.7;
+}
+
+select:focus,
+input:focus {
+  outline: none;
+  border: 2px solid #ff00ff;
+  box-shadow: 0 0 8px #ff00ff88, 0 0 12px #3700ff88;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+option {
+  background-color: rgba(255, 255, 255, 0.318); /* Stronger visibility */
+  color: #3f607c;
+  padding: 10px;
+  font-size: 15px;
+}
+
+input[readonly] {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ccc;
+  cursor: not-allowed;
+  border: 1px dashed #bbb;
+  cursor: none;
+}
+select {
+  color-scheme: dark; /* forces dark scrollbar + hint in some browsers */
+  background-color: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: rgba(255, 255, 255, 0.08);
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='10' viewBox='0 0 14 10'%3E%3Cpath fill='%23ffffff' d='M7 10L0 0h14z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+  padding-right: 36px; /* space for arrow */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  height: 48px;
+  font-size: 16px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+select:focus {
+  border-color: #ff00ff;
+  box-shadow: 0 0 8px #ff00ff88, 0 0 12px #3700ff88;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 600px) {
+  .l {
+    flex-direction: column;
+  }
+
+  .l1,
+  .l2 {
+    flex: 1 1 100%;
+  }
+
+  .container h1 {
+    font-size: 1.6rem;
+  }
+
+  select,
+  input {
+    height: 44px;
+    font-size: 15px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+  .con {
+    padding: 0px 10px;
+  }
+}
+select {
+  color-scheme: dark; /* forces dark scrollbar + hint in some browsers */
+  background-color: rgba(255, 255, 255, 0.08);
+  color: white;
+}
