@@ -34,7 +34,7 @@ body {
   pointer-events: none;
   z-index: 99999;
   clip-path: polygon(0% 20%, 50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%);
-  animation: ribbonFloat 2s linear;
+  animation: ribbonFloat 2s linear forwards;
 }
 
 @keyframes ribbonFloat {
@@ -45,11 +45,11 @@ body {
   }
   50% {
     background-color: #ffffff;
-    transform: translate(calc(var(--x) * 0.5), calc(var(--y) * 0.5)) rotate(180deg);
+    transform: translate(calc(var(--x, 0px) * 0.5), calc(var(--y, 0px) * 0.5)) rotate(180deg);
   }
   100% {
     opacity: 0;
-    transform: translate(var(--x), var(--y)) rotate(360deg);
+    transform: translate(var(--x, 0px), var(--y, 0px)) rotate(360deg);
     background-color: #0026ff;
   }
 }
